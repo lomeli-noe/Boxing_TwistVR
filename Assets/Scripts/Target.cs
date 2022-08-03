@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+
+    public new ParticleSystem particleSystem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,8 @@ public class Target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        particleSystem.Play();
+        //gameObject.GetComponent<Material>().color = Color.green;
+        Destroy(gameObject, .5f);
     }
 }

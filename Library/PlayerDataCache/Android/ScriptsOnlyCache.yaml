@@ -94,6 +94,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
     - Class: 850595691
@@ -1199,7 +1203,7 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: b7d5aa9ca6ea5707502c66107bea0050
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Target
