@@ -26,5 +26,6 @@ public class Target : MonoBehaviour
         gameObject.GetComponent<Rigidbody>().AddRelativeForce(transform.forward * 600);
         audioSource.Play();
         Destroy(gameObject, .5f);
+        GameManager.Instance.count--;
     }
 }
