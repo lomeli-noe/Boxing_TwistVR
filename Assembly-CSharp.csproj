@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Target.cs" />
     <Compile Include="Assets/Scripts/TargetPlane.cs" />
+    <Compile Include="Assets/Scripts/Timer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

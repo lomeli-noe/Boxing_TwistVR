@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Target
+    - TargetPlane
+    - Timer
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -90,6 +92,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9046}
     - Class: 114
       Script: {instanceID: 32430}
+    - Class: 114
+      Script: {instanceID: 46512}
+    - Class: 114
+      Script: {instanceID: 48498}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 123
@@ -1213,6 +1219,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Target
+  - hash:
+      serializedVersion: 2
+      Hash: 2b30eb0a0e087e6e0211f19bf820a93f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TargetPlane
+  - hash:
+      serializedVersion: 2
+      Hash: 4917db1b33408d854880c2e70b8e88c8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
