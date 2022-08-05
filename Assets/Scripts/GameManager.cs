@@ -9,6 +9,9 @@ public class GameManager : TargetPlane
     private GameObject planeObject;
     public int count;
 
+    public AudioSource audioSource;
+    public AudioClip[] audioClips;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -24,6 +27,8 @@ public class GameManager : TargetPlane
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         CreateTargetPlane();
     }
 
@@ -33,6 +38,7 @@ public class GameManager : TargetPlane
         if(count == 0)
         {
             Destroy(planeObject);
+            CreateTargetPlane();
         }
     }
 

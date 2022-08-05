@@ -22,7 +22,10 @@ public class TargetPlane : MonoBehaviour
                 targetCount++;
             }
         }
+    }
 
+    private void Start()
+    {
         GameManager.Instance.count = targetCount;
     }
 
