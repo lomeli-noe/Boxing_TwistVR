@@ -9,7 +9,6 @@ public class GameManager : TargetPlane
     private GameObject planeObject;
     public int count;
 
-
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -25,8 +24,7 @@ public class GameManager : TargetPlane
     // Start is called before the first frame update
     void Start()
     {
-        planeObject = Instantiate(targetPlanePrefab, gameObject.transform);
-        Debug.Log(count);
+        CreateTargetPlane();
     }
 
     // Update is called once per frame
@@ -36,5 +34,15 @@ public class GameManager : TargetPlane
         {
             Destroy(planeObject);
         }
+    }
+
+    public void CreateTargetPlane()
+    {
+        Vector3 random = new Vector3(Mathf.Sin(Random.Range(0, 360) * Mathf.Deg2Rad), 0, Mathf.Cos(Random.Range(0, 360) * Mathf.Deg2Rad));
+        Vector3 randomPosition = gameObject.transform.position + random;
+
+        planeObject = Instantiate(targetPlanePrefab, randomPosition, targetPlanePrefab.transform.rotation);
+        planeObject.transform.LookAt(gameObject.transform, Vector3.forward);
+
     }
 }

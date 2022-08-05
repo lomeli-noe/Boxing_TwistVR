@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
-  targetPlanePrefab: {fileID: 3111545940743962768, guid: 5e6ea51a7ccbd4a2f8165cfaef6a64e1,
+  targetPlanePrefab: {fileID: 584793928325291446, guid: 8b28a0e4efca143ce8382feb4932c2a6,
     type: 3}
   count: 0
 --- !u!4 &1173776160
@@ -711,7 +711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173776158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

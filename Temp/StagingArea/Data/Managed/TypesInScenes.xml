@@ -1,5 +1,6 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="GameManager" preserve="nothing"/>
 		<type fullname="Target" preserve="nothing"/>
 		<type fullname="TargetPlane" preserve="nothing"/>
 		<type fullname="Timer" preserve="nothing"/>
