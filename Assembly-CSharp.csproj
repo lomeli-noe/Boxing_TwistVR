@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Target.cs" />
     <Compile Include="Assets/Scripts/TargetPlane.cs" />
-    <Compile Include="Assets/Scripts/Timer.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,7 +4,6 @@ ScriptsOnlyBuild:
     - GameManager
     - Target
     - TargetPlane
-    - Timer
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -95,8 +94,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 32430}
     - Class: 114
       Script: {instanceID: 46512}
-    - Class: 114
-      Script: {instanceID: 48498}
     - Class: 114
       Script: {instanceID: 50832}
     - Class: 115
@@ -1218,25 +1215,19 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b7d5aa9ca6ea5707502c66107bea0050
+      Hash: c91c24b7d3b6b2991572f426b51baff3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Target
   - hash:
       serializedVersion: 2
-      Hash: 2b30eb0a0e087e6e0211f19bf820a93f
+      Hash: 266bcf31d63fa0e0e57130c419af272b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TargetPlane
   - hash:
       serializedVersion: 2
-      Hash: 4917db1b33408d854880c2e70b8e88c8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Timer
-  - hash:
-      serializedVersion: 2
-      Hash: 3a39eb90b735a3ce66b03233062b4a1f
+      Hash: cfc56f3daf01678de4b9cb6faa962c7d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager

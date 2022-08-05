@@ -8,9 +8,11 @@ public class TargetPlane : MonoBehaviour
 
     public Target[] targets;
     protected int targetCount;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         targets = FindObjectsOfType<Target>();
         for(int i = 0; i < targets.Length; i++)
@@ -22,16 +24,8 @@ public class TargetPlane : MonoBehaviour
                 targetCount++;
             }
         }
-    }
-
-    private void Start()
-    {
         GameManager.Instance.count = targetCount;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        audioSource.clip = audioClip;
+        audioSource.Play();
     }
 }

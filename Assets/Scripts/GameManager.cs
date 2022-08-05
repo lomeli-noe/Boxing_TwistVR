@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : TargetPlane
+public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject targetPlanePrefab;
     private GameObject planeObject;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
     public int count;
 
-    public AudioSource audioSource;
-    public AudioClip[] audioClips;
+    public float timeRemaining = 5;
 
     private void Awake()
     {
@@ -21,24 +23,21 @@ public class GameManager : TargetPlane
         else
         {
             Instance = this;
+            CreateTargetPlane();
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        audioSource = gameObject.GetComponent<AudioSource>();
-
-        CreateTargetPlane();
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if(count == 0)
+        if (timeRemaining < 0 || count == 0)
         {
             Destroy(planeObject);
             CreateTargetPlane();
+            timeRemaining = 5;
+        }
+        else
+        {
+            timeRemaining -= Time.deltaTime;
         }
     }
 
@@ -49,6 +48,12 @@ public class GameManager : TargetPlane
 
         planeObject = Instantiate(targetPlanePrefab, randomPosition, targetPlanePrefab.transform.rotation);
         planeObject.transform.LookAt(gameObject.transform, Vector3.forward);
+    }
 
+    public void TargetHit(Transform transform)
+    {
+        count--;
+        audioSource.clip = audioClip;
+        audioSource.Play();
     }
 }

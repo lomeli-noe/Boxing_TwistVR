@@ -113,8 +113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1afb9b2f2be47486abbc8db5c4c81516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 3337672112735089401}
-  audioSource: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!54 &1519894429775485655
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -458,12 +459,6 @@ PrefabInstance:
 --- !u!4 &3337672112735089400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3337672112151435595, guid: 9e1d6d1ce7ac644419baee17070e1e78,
-    type: 3}
-  m_PrefabInstance: {fileID: 2110712755}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &3337672112735089401 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3337672112151435594, guid: 9e1d6d1ce7ac644419baee17070e1e78,
     type: 3}
   m_PrefabInstance: {fileID: 2110712755}
   m_PrefabAsset: {fileID: 0}

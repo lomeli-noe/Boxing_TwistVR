@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{B077A260-753C-A6F5-ECEC-175B6D566C5C}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Target.cs" Line="33" Column="1" />
-      <File FileName="Assets/Scripts/TargetPlane.cs" Line="18" Column="69" />
-      <File FileName="Assets/Scripts/Timer.cs" Line="19" Column="34" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="5" Column="21" />
+      <File FileName="Assets/Scripts/Target.cs" Line="19" Column="34" />
+      <File FileName="Assets/Scripts/TargetPlane.cs" Line="13" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="58" Column="17" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
