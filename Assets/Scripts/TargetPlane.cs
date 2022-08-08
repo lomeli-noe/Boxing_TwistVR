@@ -9,12 +9,14 @@ public class TargetPlane : MonoBehaviour
     public Target[] targets;
     protected int targetCount;
     public AudioSource audioSource;
-    public AudioClip audioClip;
 
     // Start is called before the first frame update
     void Start()
     {
-        targets = FindObjectsOfType<Target>();
+        GameManager.Instance.count = 0;
+        targetCount = 0;
+        targets = gameObject.GetComponentsInChildren<Target>();
+        
         for(int i = 0; i < targets.Length; i++)
         {
             int num = UnityEngine.Random.Range(0, 2);
@@ -23,9 +25,8 @@ public class TargetPlane : MonoBehaviour
             {
                 targetCount++;
             }
-        }
+        }        
         GameManager.Instance.count = targetCount;
-        audioSource.clip = audioClip;
-        audioSource.Play();
+        audioSource.Play(0);
     }
 }

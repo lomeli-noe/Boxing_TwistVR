@@ -9,10 +9,7 @@ public class Target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (((1 << other.gameObject.layer) & layerMask) != 0)
-        {
-            GameManager.Instance.TargetHit(gameObject.transform);
-            Destroy(gameObject);
-        }
+        GameManager.Instance.TargetHit();
+        Destroy(gameObject);
     }
 }

@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public GameObject targetPlanePrefab;
     private GameObject planeObject;
     public AudioSource audioSource;
-    public AudioClip audioClip;
 
     public int count;
 
@@ -50,10 +49,9 @@ public class GameManager : MonoBehaviour
         planeObject.transform.LookAt(gameObject.transform, Vector3.forward);
     }
 
-    public void TargetHit(Transform transform)
+    public void TargetHit()
     {
         count--;
-        audioSource.clip = audioClip;
-        audioSource.Play();
+        audioSource.Play(0);
     }
 }

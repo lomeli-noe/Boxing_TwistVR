@@ -723,7 +723,6 @@ MonoBehaviour:
   targetPlanePrefab: {fileID: 584793928325291446, guid: 8b28a0e4efca143ce8382feb4932c2a6,
     type: 3}
   audioSource: {fileID: 1173776161}
-  audioClip: {fileID: 8300000, guid: 02d7ba0f4da95430db6d4539db577d32, type: 3}
   count: 0
   timeRemaining: 5
 --- !u!4 &1173776160
@@ -751,8 +750,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 02d7ba0f4da95430db6d4539db577d32, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

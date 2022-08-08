@@ -106,10 +106,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
     - Class: 850595691
@@ -1221,13 +1217,13 @@ ScriptsOnlyBuild:
     className: Target
   - hash:
       serializedVersion: 2
-      Hash: 266bcf31d63fa0e0e57130c419af272b
+      Hash: 6f57461be167fef725ad2ac3aa171d16
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TargetPlane
   - hash:
       serializedVersion: 2
-      Hash: cfc56f3daf01678de4b9cb6faa962c7d
+      Hash: a881e0016ce054d55465ca464502f4b6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
