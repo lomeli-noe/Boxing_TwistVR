@@ -44,10 +44,12 @@ public class GameManager : MonoBehaviour
 
     public void CreateTargetPlane()
     {
-        Vector3 random = new Vector3(Mathf.Sin(Random.Range(0, 360) * Mathf.Deg2Rad), 0, Mathf.Cos(Random.Range(0, 360) * Mathf.Deg2Rad));
-        Vector3 randomPosition = gameObject.transform.position + random;
+        float angle = Random.Range(0.0f, Mathf.PI * 2);
+        float range = 1f;
+        Vector3 V = new Vector3(Mathf.Sin(angle), 1.3f, Mathf.Cos(angle));
+        V *= range;
 
-        planeObject = Instantiate(targetPlanePrefab, randomPosition, targetPlanePrefab.transform.rotation);
+        planeObject = Instantiate(targetPlanePrefab, V, targetPlanePrefab.transform.rotation);
         planeObject.transform.LookAt(gameObject.transform, Vector3.forward);
     }
 
