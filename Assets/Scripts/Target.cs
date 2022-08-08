@@ -9,7 +9,7 @@ public class Target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        GameManager.Instance.TargetHit();
+        GameManager.Instance.TargetHit(gameObject.transform);
         Destroy(gameObject);
     }
 }

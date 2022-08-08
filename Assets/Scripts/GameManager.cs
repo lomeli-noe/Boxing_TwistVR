@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     private GameObject planeObject;
     public AudioSource audioSource;
 
+    public ParticleSystem particleSystem;
+
     public int count;
 
     public float timeRemaining = 5;
@@ -49,9 +51,11 @@ public class GameManager : MonoBehaviour
         planeObject.transform.LookAt(gameObject.transform, Vector3.forward);
     }
 
-    public void TargetHit()
+    public void TargetHit(Transform targetTransform)
     {
         count--;
         audioSource.Play(0);
+        particleSystem.transform.position = targetTransform.position;
+        particleSystem.Play();
     }
 }
